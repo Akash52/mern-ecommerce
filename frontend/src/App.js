@@ -1,15 +1,19 @@
 import React from 'react'
-import './bootstrap.min.css'
+import { Container } from 'react-bootstrap'
 import Footer from './Component/Footer'
 import Header from './Component/Header'
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
-      <p>Content !</p>
+      <main className="py-3">
+        <Container>
+          <h1>Content !</h1>
+        </Container>
+      </main>
       <Footer />
-    </div>
+    </>
   )
 }
 
