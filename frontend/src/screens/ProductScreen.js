@@ -8,11 +8,14 @@ const ProductScreen = ({ match }) => {
   const [product, setProduct] = useState({})
   useEffect(() => {
     const fetchProduct = async () => {
+      //eslint-disable-next-line
       const { data } = await axios.get(`/api/products/${match.params.id}`)
+
       setProduct(data)
     }
+
     fetchProduct()
-  }, [])
+  }, [match])
 
   return (
     <>
