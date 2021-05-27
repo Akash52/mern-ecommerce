@@ -4,6 +4,8 @@ import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap'
 import Rating from '../Components/Rating'
 import axios from 'axios'
 
+//HERE WE FETCH SINGLE PRODUCT
+
 const ProductScreen = ({ match }) => {
   const [product, setProduct] = useState({})
   useEffect(() => {
