@@ -11,7 +11,7 @@ import Message from '../Components/Message'
 
 const ProductScreen = ({ history, match }) => {
   // const [product, setProduct] = useState({})
-  const [qty, setQty] = useState(0)
+  const [qty, setQty] = useState(1)
   const dispatch = useDispatch()
   const productDetails = useSelector((state) => state.productDetails)
   const { error, product, loading } = productDetails
