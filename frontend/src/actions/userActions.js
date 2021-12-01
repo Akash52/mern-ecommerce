@@ -20,6 +20,7 @@ import {
 } from '../constant/userConstant'
 
 import { ORDER_LIST_MY_RESET } from '../constant/orderConstant'
+import { USER_LIST_RESET } from './../constant/userConstant'
 
 //USER LOGIN ACTION
 export const login = (email, password) => async (dispatch) => {
@@ -62,6 +63,7 @@ export const logout = () => (dispatch) => {
   dispatch({ type: USER_LOGOUT })
   dispatch({ type: USER_DETAILS_RESET })
   dispatch({ type: ORDER_LIST_MY_RESET })
+  dispatch({ type: USER_LIST_RESET })
 }
 
 //USER REGISTER ACTION
